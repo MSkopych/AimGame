@@ -1,13 +1,13 @@
 const startBtn = document.querySelector('.start')
-const screens = document.querySelectorAll('.screen');
+const screens = document.querySelectorAll('.screen'); // getting an array of screens
 const frontPag = document.querySelector('.frontP')
-const timeList = document.querySelector('#time-list')
+const timeList = document.querySelector('#time-list') 
 const timeEl = document.querySelector('#time')
 let time = 0;
 
 
 startBtn.addEventListener('click', (event) => {
-    event.preventDefault();
+    event.preventDefault();  // disabling standard behavior
     screens[0].classList.add('up');
 
 })
@@ -50,6 +50,6 @@ function gameOver(){
     window.location.reload();
 }
 
-function setTime(value){
+function setTime(value){    // helper function 
     timeEl.innerHTML = `00:${value}`;
 }
