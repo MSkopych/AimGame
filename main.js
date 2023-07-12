@@ -49,6 +49,14 @@ function decreaseTime(){
 function gameOver(){
     window.location.reload();
 }
+function createRandomCircle(){
+    const circle = document.createElement('div');
+    
+    circle.classList.add('circle');
+    circle.style.width = '15px';
+    circle.style.height = '15px';
+    board.append(circle);
+}
 
 function setTime(value){    // helper function 
     timeEl.innerHTML = `00:${value}`;
