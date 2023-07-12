@@ -1,9 +1,9 @@
-const startBtn = document.querySelector('.start')
+const startBtn = document.querySelector('.start');
 const screens = document.querySelectorAll('.screen'); // getting an array of screens
-const frontPag = document.querySelector('.frontP')
-const timeList = document.querySelector('#time-list') 
-const timeEl = document.querySelector('#time')
-const board = document.querySelector('#board')
+const frontPag = document.querySelector('.frontP');
+const timeList = document.querySelector('#time-list');
+const timeEl = document.querySelector('#time');
+const board = document.querySelector('#board');
 let time = 0;
 
 
@@ -30,13 +30,14 @@ timeList.addEventListener('click', (event) =>
 
 
 function startGame(){
-    setInterval(decreaseTime, 1000)
+    setInterval(decreaseTime, 1000);
     setTime(time);
+    createRandomCircle();
 }
 
 function decreaseTime(){
     if(time ==0){
-        gameOver()
+        gameOver();
     }
     else{
     correctly = --time;
