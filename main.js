@@ -3,6 +3,7 @@ const screens = document.querySelectorAll('.screen'); // getting an array of scr
 const frontPag = document.querySelector('.frontP')
 const timeList = document.querySelector('#time-list') 
 const timeEl = document.querySelector('#time')
+const board = document.querySelector('#board')
 let time = 0;
 
 
